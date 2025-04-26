@@ -2,89 +2,102 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SRLC - Scientific Research and Learning Center</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: #f9f9f9;
-      color: #333;
-      margin: 0;
-      padding: 0;
-      text-align: center;
-    }
-    header {
-      background: #6200ea;
-      color: white;
-      padding: 2em 0;
-    }
-    section {
-      padding: 2em;
-      margin-bottom: 100px; /* Ensure space for the footer */
-    }
-    footer {
-      background: #333;
-      color: white;
-      padding: 1em 0;
-      position: relative;
-      bottom: 0;
-      width: 100%;
-    }
-    a {
-      color: #6200ea;
-      text-decoration: none;
-    }
-    .button {
-      background-color: #6200ea;
-      color: white;
-      padding: 12px 25px;
-      text-align: center;
-      border-radius: 5px;
-      display: inline-block;
-      margin-top: 20px;
-      font-size: 16px;
-      cursor: pointer;
-      text-decoration: none;
-    }
-    .button:hover {
-      background-color: #3700b3;
-    }
-  </style>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body>
+<body class="bg-gray-50 text-gray-800">
 
-  <header>
-    <h1>Welcome to SRLC</h1>
-    <p>Scientific Research and Learning Center, Biratnagar, Nepal</p>
+  <!-- Navbar -->
+  <header class="bg-white shadow">
+    <div class="container mx-auto flex justify-between items-center p-4">
+      <h1 class="text-2xl font-bold text-blue-700">SRLC</h1>
+      <nav class="space-x-6">
+        <a href="#about" class="hover:text-blue-500">About</a>
+        <a href="#services" class="hover:text-blue-500">Services</a>
+        <a href="#activities" class="hover:text-blue-500">Activities</a>
+        <a href="#contact" class="hover:text-blue-500">Contact</a>
+      </nav>
+    </div>
   </header>
 
-  <section>
-    <h2>About SRLC</h2>
-    <p>SRLC (Scientific Research and Learning Center) is a hub for research and learning. We strive to advance knowledge through innovative research and provide a platform for learning and growth in various scientific fields.</p>
-
-    <h2>Director</h2>
-    <p><strong>Arjun Dhungana</strong>, Director of SRLC, leads the center with a vision to enhance scientific knowledge and promote research-based learning.</p>
-
-    <h2>Our Work</h2>
-    <p>SRLC focuses on a variety of research areas, including:
-      <ul>
-        Scientific Research,
-        Innovation and Development,
-        Learning and Educational Programs,
-        Collaborations with National and International Institutions
-      </ul>
-    </p>
-
-    <h2>Contact Information</h2>
-    <p><strong>Contact Number:</strong> +977 9811358730</p>
-    <p><strong>Email:</strong> <a href="mailto:arjunparticle@gmail.com">arjunparticle@gmail.com</a></p>
-
-    <!-- Updated Learn More Button -->
-    <a href="https://sites.google.com/view/arjunparticle/about?authuser=0&fbclid=IwY2xjawJ3FKhleHRuA2FlbQIxMABicmlkETEzNXVzVlh4M05sQ1dwSEJJAR4d-RoqKWny4EjJjjC39bK3--3cQtcF2dZhVHu6Cm6LjratDF7U1EmR6uD0vw_aem_3-GLGRAU9bckFan-G2_B9Q" class="button" target="_blank">More About Arjun Dhungana</a>
+  <!-- Hero Section -->
+  <section class="bg-blue-600 text-white text-center py-20">
+    <div class="container mx-auto">
+      <h2 class="text-4xl font-bold mb-4">Welcome to SRLC</h2>
+      <p class="text-lg mb-6">Scientific Research and Learning Center</p>
+      <p class="text-md">Empowering Knowledge. Advancing Research.</p>
+      <img src="https://via.placeholder.com/600x300" alt="SRLC Banner" class="mx-auto mt-8 rounded-lg shadow-lg">
+    </div>
   </section>
 
-  <footer>
-    <p>&copy; 2025 SRLC | Scientific Research and Learning Center, Biratnagar, Nepal</p>
+  <!-- About Section -->
+  <section id="about" class="py-16">
+    <div class="container mx-auto text-center">
+      <h3 class="text-3xl font-semibold text-blue-700 mb-6">About Us</h3>
+      <p class="max-w-3xl mx-auto">SRLC is committed to fostering scientific research and providing high-quality learning opportunities. Under the leadership of Director <span class="font-semibold">Arjun Dhungana</span>, our headquarters located in Biratnagar, Nepal, strives to create an environment of innovation, discovery, and education.</p>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="bg-gray-100 py-16">
+    <div class="container mx-auto text-center">
+      <h3 class="text-3xl font-semibold text-blue-700 mb-10">Our Services</h3>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg">
+          <img src="https://via.placeholder.com/150" alt="Research" class="mx-auto mb-4">
+          <h4 class="text-xl font-bold mb-2">Research Programs</h4>
+          <p>Leading-edge scientific research projects in various fields of science and technology.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg">
+          <img src="https://via.placeholder.com/150" alt="Workshops" class="mx-auto mb-4">
+          <h4 class="text-xl font-bold mb-2">Workshops & Training</h4>
+          <p>Interactive learning sessions, training programs, and seminars for students and professionals.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg">
+          <img src="https://via.placeholder.com/150" alt="Publications" class="mx-auto mb-4">
+          <h4 class="text-xl font-bold mb-2">Publications & Journals</h4>
+          <p>Promoting academic writing, publishing research articles, and disseminating knowledge globally.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Teaching Learning Activities Section -->
+  <section id="activities" class="py-16">
+    <div class="container mx-auto text-center">
+      <h3 class="text-3xl font-semibold text-blue-700 mb-10">Teaching & Learning Activities</h3>
+      <div class="grid md:grid-cols-2 gap-8">
+        <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg">
+          <img src="https://via.placeholder.com/400x250" alt="Learning Activity" class="mx-auto mb-4">
+          <h4 class="text-xl font-bold mb-2">Interactive Lectures</h4>
+          <p>Engaging classroom sessions focused on practical understanding and scientific applications.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg">
+          <img src="https://via.placeholder.com/400x250" alt="Teaching Activity" class="mx-auto mb-4">
+          <h4 class="text-xl font-bold mb-2">Project-Based Learning</h4>
+          <p>Encouraging students to participate in hands-on projects to develop research and analytical skills.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-16">
+    <div class="container mx-auto text-center">
+      <h3 class="text-3xl font-semibold text-blue-700 mb-6">Contact Us</h3>
+      <p class="mb-4">Head Office: Biratnagar, Nepal</p>
+      <p class="mb-4">Director: Arjun Dhungana</p>
+      <p>Email: <a href="mailto:arjunparticle@gmail.com" class="text-blue-600 hover:underline">arjunparticle@gmail.com</a></p>
+      <p>Phone: 9811358730</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-blue-700 text-white py-6">
+    <div class="container mx-auto text-center">
+      <p>&copy; 2025 SRLC. All rights reserved.</p>
+    </div>
   </footer>
 
 </body>
