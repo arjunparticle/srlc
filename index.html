@@ -20,7 +20,16 @@
       </nav>
     </div>
   </header>
+  
+<marquee behavior="scroll" direction="left">
+  Welcome to SRLC - Scientific Research and Learning Center, Biratnagar, Nepal
+</marquee>
 
+  import { Card, CardContent } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+
+export default function SRLCWebsite() {
+  return (
   <div className="p-6 space-y-10 bg-gray-50 text-gray-800">
       {/* Moving Text */}
       <div className="overflow-hidden whitespace-nowrap">
@@ -29,7 +38,8 @@
           🌍 Join Our Mission for Global Scientific Advancement! 🌍 &nbsp;&nbsp;&nbsp;
         </p>
       </div>
-
+)
+    
   <!-- Hero Section -->
   <section class="bg-red-600 text-white text-center py-20">
     <div class="container mx-auto">
